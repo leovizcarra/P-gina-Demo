@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link href="../css/estilo.css" rel="stylesheet" type="text/css"/> <!-- -->
+        <link rel="icon" type="image/png" href="../img/favicon.png"/>    
+        <title>Menú - Inventario</title> <!-- -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header> <!-- -->
+            <h1><a href="../menuPrincipal.html">Videocentro</a></h1> <!-- -->
+        </header>
+        <nav> <!-- -->
+            <ul>
+                <li><a href="../menuPrincipal.html" >Inicio</a></li>
+                <li><a href="../control?tarea=inventariar">Inventariar</a></li>
+                <li><a href="../control?tarea=desinventariar">Desinventariar</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <form action="../buscarInventario" method="POST" autocomplete="off">
+                <table border="1">
+                    <tr>
+                        <td>No. Catálogo</td>
+                        <td><input type="text" name="numCatalogo" value="" maxlength="10"/></td>
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" value="Buscar" name="accion" />
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </article>
+
+        <footer> <!-- -->
+            Diseñador y programador: Leobardo Vizcarra Valdez
+        </footer>
+    </body>
+</html>

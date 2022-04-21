@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link href="../css/estilo.css" rel="stylesheet" type="text/css"/> <!-- -->
+        <link rel="icon" type=".image/png" href="../img/favicon.png"/>    
+        <title>Menú - Clientes</title> <!-- -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header> <!-- -->
+            <h1><a href="../menuPrincipal.html">Videocentro</a></h1> <!-- -->
+        </header>
+        <nav> <!-- -->
+            <ul>
+                <li><a href="../menuPrincipal.html" >Inicio</a></li>
+                <li><a href="../control?tarea=listarClientes">Listado de Clientes</a></li>
+                <li><a href="../control?tarea=buscaCliente">Buscar Clientes</a></li>
+            </ul>
+        </nav>
+        <article>
+            <form action="../agregarCliente" method="POST" autocomplete="off">
+                <table border="1">
+                    <tr>
+                        <td>No. Credencial</td>
+                        <td><input type="text" name="numCredencial" value="" maxlength="10"/></td>
+                    </tr>
+                    <tr>
+                        <td>Nombre</td>
+                        <td><input type="text" name="nombre" value="" maxlength="35" /></td>
+                    </tr>
+                    <tr>
+                        <td>Dirección</td>
+                        <td><input type="text" name="direccion" value="" maxlength="35" /></td>
+                    </tr>
+                    <tr>
+                        <td>Teléfono</td>
+                        <td><input type="text" name="telefono" value="" maxlength="10" /></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="reset" value="Restablecer" name="btnReset" />
+                            <input type="submit" value="Aceptar" name="btnAgregar" />
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </article>
+
+        <footer> <!-- -->
+            Diseñador y programador: Leobardo Vizcarra Valdez
+        </footer>
+    </body>
+</html>

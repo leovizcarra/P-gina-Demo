@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link href="css/estilo.css" rel="stylesheet" type="text/css"/> <!-- -->
+        <link rel="icon" type="image/png" href="img/favicon.png"/>    
+        <title>Menú</title> <!-- -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header> <!-- -->
+            <h1><a href="menuPrincipal.html">Videocentro</a></h1> <!-- -->
+        </header>
+        <nav> <!-- -->
+            <ul>
+                <li><a href="control?tarea=listarClientes">Clientes</a></li>
+                <li><a href="control?tarea=listarVideojuegos">Videojuegos</a></li>
+                <li><a href="control?tarea=listarInventario">Inventario</a></li>
+                <!-- <li><a href="control?tarea=listarRentas">Rentas</a></li> -->
+            </ul>
+        </nav>
+
+        <article>
+
+            <table border="0">
+                <thead>
+                    <tr>
+                        <th><h1>Esta es la prueba de AJAX</h1></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div id="contenido">
+                                <img src="img/perdonar.png" alt="caratriste" width="200">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><button id="triste">Cara triste</button>
+                            <button id="agradecido">Corazón</button></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </article>
+
+        <script src="funciones.js" type="text/javascript"></script>
+
+        <footer> <!-- -->
+            Diseñador y programador: Leobardo Vizcarra Valdez
+        </footer>
+    </body>
+</html>

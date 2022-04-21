@@ -1,0 +1,107 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 8/07/2021, 04:16:17 PM
+    Author     : Leo
+*/
+*{
+    margin: 0; /** Se establece un margen 0 para que los colores y diseños abarquen lo máximo de la pantalla **/
+    padding: 0; /** Se establece un padding 0 para que los elementos posteriormente puedan ser acomodados a necesidad **/
+    box-sizing: border-box; /** Se declara la visualización de los elementos **/
+    list-style : none; /** Se elimina cualquier estilo de lista **/
+    text-decoration: none; /** Se elimina cualquier decoración de texto   **/
+}
+
+table.inicioSesion{
+    font-family: monospace; /** Controla la fuente de las letras dentro de la tabla **/
+
+    border-width: medium; /** Controla el grosor de el borde exterior de la tabla **/
+    border-style: solid; /** Controla el diseño del borde exterior de la tabla **/
+    border-color: black; /** Controla el color del borde exterior de la tabla **/
+
+    text-align: center; /** Controla la alineación del texto dentro tabla **/
+}
+body.inicioSesion{
+    text-align: center;
+}
+
+form.inicioSesion{
+    display: inline-block; /** Controla la alineación del formulario **/
+}
+
+header {
+    position: fixed; /** Su posición se define como fija, para que esta nunca cambie **/
+    text-align: center; /** Se centra el texto de la cabecera**/
+    width: 100%; /** De define que la longitud de la cabecera siempre será del 100% del ancho del dispositivo **/
+    padding: 20px; /** Se define el grosor del padding, para lograr que el texto se vea centrado **/
+    height: 80px; /** Se define la altura del encabezado, esto para lograr que sea más estético **/ 
+    border-bottom-color: black;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+
+    background-color: #eae89d; /** Se define el color de la cabecera **/
+}
+
+nav{
+    margin-top: 80px; /** Se define a qué altura se comenzará a renderizar la nav, este valor debe coincidir con el height de la cabecera para que logre un efecto contínuo **/
+    padding-top: 30px; /** Se define el padding de la parte superior del contenedor de nav, para que el texto que contenga se vea relativamente centrado **/
+    margin-bottom: 80px; /** Se defube a qué altura se dejará de renderizar la nav, este valor debe coincidir con el height del footer para que logre un efecto contínuo **/ 
+    padding-bottom: 30px; /** Se defube el paddubg de la parte inferior del contenedor de nav, para que el texto, en caso de que algún día se extienda, se vea relativamente centrado**/ 
+    padding-left: 30px;
+    border-right-color: black;
+    border-right-style: solid;
+    border-right-width: thin;
+
+    position: fixed; /** Su posición se define como fija, para que esta nunca cambie **/
+    width: 10%; /** Se define la anchura de la barra de navegación lateral **/ 
+    height: 100%; /** Se define la altura de la barra de navegación, en este caso es 100% para que esté presente a lo alto de toda la página, sin embargo para que no se sobreponga encima del header o footer, se deberá de definir un margin superior e inferior **/ 
+
+    float: left; /** Se denomina flotante a la izquiera para que article pueda estar en el mismo espacio pero a su derecha **/ 
+    text-align: left; /** Se centra todo el texto que se encuentre dentro de nav **/ 
+    background-color: #789cd4; /** Se define el color de nav **/ 
+}
+
+article{
+    margin-top: 80px; /** Se define a qué altura se comenzará a renderizar la nav, este valor debe coincidir con el height de la cabecera para que logre un efecto contínuo **/
+    padding-top: 30px; /** Se define el padding de la parte superior del contenedor de nav, para que el texto que contenga se vea relativamente centrado **/
+    margin-bottom: 80px; /** Se defube a qué altura se dejará de renderizar la nav, este valor debe coincidir con el height del footer para que logre un efecto contínuo **/ 
+    padding-bottom: 30px; /** Se defube el paddubg de la parte inferior del contenedor de nav, para que el texto, en caso de que algún día se extienda, se vea relativamente centrado**/ 
+    padding: 30px;
+
+    position: fixed; /** Su posición se define como fija, para que esta nunca cambie **/
+    right: 0; /** Se establece la distancia entre el margen derecho y el elemento article, este se define 0 para que siempre se encuentre en la izquierda**/
+    width: 90%; /** Se establece el largo de article, en este caso es el restante de la barra nav **/
+    height: 100%; /** Se establece lo alto de article, en este caso es 100% para que esté a lo alto de todo el documento **/
+
+    float: left; /** Se denomina flotante a la izquiera para que nav pueda estar visible y a la izquierda de artcle **/
+    text-align: left; /** Se establece la alineación del texto **/
+    background-color: #94beff; /** Se define el color de article **/
+}
+
+footer{
+    position: absolute; /** Se define la posición como absoluta para que footer siempre se encuentre en la parte inferior de la página **/
+    bottom: 0; /** Se establece la distancia entre el elemento con el margen inferior de la pagina para que siempre se encuentre abajo del todo**/
+
+    height: 80px; /** Se establece la altura de el elemento **/
+    width: 100%; /** Se establece la anchura del elemento, en este caso un 100% para que siempre esté visible **/
+    padding: 30px; /** El padding se encargará de que el texto dentro del footer se vea relativamente centrado **/
+
+    text-align: center; /** Se centra el texto dentro del footer  **/
+    background-color: #eae89d; /** Se establece el color de fondo del elemento **/
+
+    border-top-color:  black;
+    border-top-style:  solid;
+    border-top-width:  thin;
+}
+
+table{
+    text-align: center;
+}
+
+image{
+    width: 200px;
+    height: 200px;
+}

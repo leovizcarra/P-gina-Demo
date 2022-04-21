@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+Esta es la primera página que verá el usuario, por definición del proyecto es
+necesario que sea un sistema de login. Según el proyecto, no importa si el
+usuario y la contraseña son "hardcodeados".
+-->
+<html>
+    <head>
+        <link href="css/estilo.css" rel="stylesheet" type="text/css"/> <!--Se importan los estilos del archivo css -->
+        <link rel="icon" type="image/png" href="img/favicon.png"/>  
+        <title>Inicio de Sesión</title> <!--Título de la pestaña del navegador -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body class="inicioSesion">
+        <form class="inicioSesion" action="login"> <!--Se declara el formulario donde el usuario ingresará su información y cuya acción redireccionará a un servlet encargado del control-->
+            <table class="inicioSesion"> <!--Se declara una tabla para que así el formulario tenga una estructura defifnida -->
+                <thead> <!--La cabecera de la tabla -->
+                    <tr>
+                        <th colspan="2">Ingrese sus datos</th> <!--Título de la tabla para dar instrucciones junto con un colspan de tamaño 2 para que el texto esté centrado-->
+                    </tr>
+                </thead>
+                <tbody> <!--Cuerpo de la tabla -->
+                    <tr> <!--Primera fila -->
+                        <td>Usuario</td> <!--Texto instructivo para el usuario -->
+                        <td>
+                            <input type=text name="usuario" placeholder="Usuario" required> <!--Campo de texto que recibe el nombre de usuario -->
+                        </td>
+                    </tr>
+                    <tr> <!--Segunda fila -->
+                        <td>Contraseña</td> <!--Texto instructivo para el usuario -->
+                        <td>
+                            <input type=password name="contra" placeholder="Contraseña" required><!--Campo de texto especial para la contraseña del usuario -->
+                        </td>
+                    </tr>
+                    <tr> <!--Tercera fila -->
+                        <td colspan="2"> <!--Colspan de tamaño 2 para que los botones se centren en el formulario -->
+                            <input type=reset value="Limpiar"> <!--Botón para limpiar los campos de texto llenados -->
+                            <button type="submit" >Aceptar</button> <!--Botón para aceptar la información -->
+                        </td>
+                    </tr>
+                    <tr> <!--Cuarta fila la cual otorga el usuario y contraseña-->
+                        <td colspan="2"> <!--Colspan de tamaño 2 para que el texto esté centrado en el formulario -->
+                            TIP: El usuario y la contraseña son "admin" <!--Instrucciones para el usuario -->
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+
+        <footer> <!-- -->
+            Diseñador y programador: Leobardo Vizcarra Valdez
+        </footer>
+    </body>
+</html>
